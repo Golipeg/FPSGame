@@ -6,13 +6,20 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private const string TAG_ENEMY = "Enemy";
-    [SerializeField] private Rigidbody _rigidbody;
+    private const string TAG_GROUND = "Ground";
+   private Rigidbody _rigidbody;
+    public Rigidbody Rigidbody => _rigidbody;
+
+    private void Awake()
+    {
+        _rigidbody = GetComponent<Rigidbody>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag(TAG_ENEMY))
+        if (collision.collider.CompareTag(TAG_ENEMY)||collision.collider.CompareTag(TAG_GROUND))
         {
-            Debug.Log("Enemy");
+            
             Destroy(gameObject);
         }
     }

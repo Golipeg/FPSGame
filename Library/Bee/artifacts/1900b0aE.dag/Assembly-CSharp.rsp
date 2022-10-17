@@ -358,7 +358,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/EnemyBehaviour.cs"
+"Assets/Scripts/EnemyManager.cs"
+"Assets/Scripts/EnemyMoving.cs"
 "Assets/Scripts/Moving.cs"
+"Assets/Scripts/PlayerMain.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0
 
