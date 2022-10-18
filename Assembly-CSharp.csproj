@@ -42,12 +42,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
+     <Compile Include="Assets\Scripts\PlayerMain.cs" />
      <Compile Include="Assets\Scripts\Moving.cs" />
+     <Compile Include="Assets\Scripts\EnemyManager.cs" />
+     <Compile Include="Assets\Scripts\EnemyMoving.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\PlayerMain.cs" />
-     <Compile Include="Assets\Scripts\EnemyMoving.cs" />
-     <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity 2022.1.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
