@@ -10,7 +10,7 @@ public class Moving : MonoBehaviour
     [SerializeField] private float _speed = 5f;
     [SerializeField] private float _rotateVelocity = 5f;
 
-    void Update()
+    void Update() 
     {
         var horizontal = Input.GetAxis("Horizontal") * _rotateVelocity;
         var vertical = Input.GetAxis("Vertical") * _speed;

@@ -12,6 +12,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (collision.collider.GetComponent<Bullet>())
         {
             Destroy(gameObject);
+            GameEvents.Instance.OnUpdateEnemyUI?.Invoke();
         }
     }
 }

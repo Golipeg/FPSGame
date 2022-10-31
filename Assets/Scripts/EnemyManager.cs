@@ -16,7 +16,9 @@ public class EnemyManager : MonoBehaviour
             enemy.transform.rotation=Quaternion.identity;//ротация в нулях  т.е. обьект появляется
             
         }
+        GameEvents.Instance.OnEnemyInit?.Invoke(_enemyCount);
     }
+    
     private void RandomPosition(Transform enemyTransform)
     {
         _currentPosition = new Vector3(Random.Range(-19f, 19f), 1.69f, Random.Range(-19f, 19f));
