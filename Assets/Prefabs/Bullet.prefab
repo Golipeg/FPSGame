@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4462131139741922420}
   - component: {fileID: 5904695253295650665}
   - component: {fileID: -5776432653545917075}
+  - component: {fileID: 2134994541284483946}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4462131139741922422
 MeshFilter:
@@ -127,4 +128,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b07707cda0213849afce6ebe8e30929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 0}
+--- !u!95 &2134994541284483946
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4462131139741922421}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab7bc8fe109426545b9cdf5188f1f0d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
